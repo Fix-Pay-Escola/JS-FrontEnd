@@ -1,0 +1,5 @@
+var nome = window.prompt("qual seu nome?")
+document.writeln(`Ola <strong> ${nome}</strong>, seu nome tem ${nome.length} letras </br>`)
+document.writeln(`seu nome em maiusculo é ${nome.toUpperCase()} </br>`)
+document.writeln(`seu nome em minusculo é ${nome.toLowerCase()} `)
+document.writeln(`muitobem`)
