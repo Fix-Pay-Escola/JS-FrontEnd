@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--titulo-->
+    <title>ATIVIDADE 7 - Estrangeiro</title>
+</head>
+
+
+<!--html-->
+<body>
+   <h1>Sistema de Controle de nacionalidade</h1> 
+   Digite seu país: <input type="text" name="pais" id="pais">
+   <input type="button" value="verificar" onclick="nacionalidade()">
+   <div id="res"></div>
+
+<!--javascript-->
+<script>
+function nacionalidade(){
+var nasci = window.document.querySelector('input#pais')
+var res = window.document.querySelector('div#res')
+var pais = nasci.value
+res.innerHTML = `<p> Seu país é <strong> ${nasci}</strong></p>`
+if(pais.toLowerCase() != `brasil`) {
+    res.innerHTML = `<p> Seu país é <strong> ${nasci.value}</strong> ou seja você nao é brasileiro</p>`
+}
+else{
+    res.innerHTML = `<p> Seu país é <strong> ${nasci.value}</strong> ou seja você é brasileiro</p>`
+}
+}
+</script>
+
+</body>
+</html>
+<!--LEO QUE FEZ-->

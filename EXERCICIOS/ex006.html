@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 6 - Detran</title>
+
+    <style>
+        * {
+            margin: 0 auto;
+            padding: 0;
+        }
+
+        body{
+            
+            display: flex;
+            align-items: center; 
+            background-color: rgb(225, 254, 216);
+            box-sizing: border-box;
+            height: 100vh;
+            width: 100vh;
+            justify-content: center;
+            gap: 40px;
+            font-size: 25px;
+            flex-direction: column;
+        }
+        input{
+            font-size: 17px;
+        }
+
+        .calculo,.div{
+            align-items: center;
+        }
+    </style>
+</head>
+<body id="body">
+
+    <h1> Atividade do Detran</h1>
+    <div class="calculo">
+        Velocidade do Veiculo:<input type="number" name="txtspd" id="txtspd">
+        <input type="button" value="calcular" onclick="calculando()">
+    </div>
+    
+    <div id="div">RESULTADO</div>
+    <div id="img">imagemteste</div>
+
+    <script>
+        function calculando(){
+            var body = window.document.getElementById('body')
+            var imagem = window.document.getElementById('img')
+            var txtspd = window.document.getElementById("txtspd")
+            var res = window.document.getElementById("div")
+            var spd = Number(txtspd.value)
+            if(spd > 60){
+                res.innerHTML = "VOCE ULTRAPASSOU O LIMITE DE VELOCIDADE"
+                 img.innerHTML = '<img src="https://www.google.com/imgres?imgurl=https%3A%2F%2Fimages.tcdn.com.br%2Fimg%2Fimg_prod%2F938697%2Fplaca_de_pare_parada_obrigatoria_r_1_33_3_016374bddd353ce9b169cb841e5160b5.jpg&tbnid=hgEsJ_hAuJHr9M&vet=12ahUKEwjXvP72vvOAAxW1ALkGHSsaALkQMygBegQIARB1..i&imgrefurl=https%3A%2F%2Fwww.sinalcenter.com.br%2Fplaca-de-pare-parada-obrigatoria-r-1&docid=o9eqmNxR_9YryM&w=1000&h=1000&q=placa%20de%20pare&ved=2ahUKEwjXvP72vvOAAxW1ALkGHSsaALkQMygBegQIARB1/>"'
+            }else{
+                res.innerText = "VOCE ESTA MULTADO PORQUE ULTRAPASSOU O LIMITE DE VELOCIDADE"
+            }
+        }
+
+    </script>
+</body>
+</html>
