@@ -1,6 +1,5 @@
-
 body{
-    background:#81A5B1;
+    background:#01aae2;
     font: normal 15pt ;
     font-family:  'Trebuchet MS', sans-serif ;
     }
@@ -19,8 +18,26 @@ body{
     color: white;
     text-align: center;
     }
+    
+    div{
+        text-align: center;
+        padding: 8px;
+    }
+    
     footer{
         color: white;
         text-align: center;
         font-style: italic;
-    } 
+    }
+    
+    img{
+        height: 250px;
+        width: 250px;
+    }
+
+
+    select{
+        
+        margin: 25px;
+        width: 170px;
+    }
