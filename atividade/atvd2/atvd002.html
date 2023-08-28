@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Atividade02</title>
     <link rel="stylesheet" href="style2.css">
 </head>
 
@@ -16,17 +16,29 @@
     <section>
 
         <div>
-
+            <p>
+                Ano de Nascimento:
+                <input type="number" name="number" id="txtano">
+            </p>
+            <p>
+                Sexo: <input type="radio" name="radsex" id="mas" checked>
+                <label for="mas">Masculino</label>
+                <input type="radio" name="radsex" id="fem">
+                <label for="fem">Feminino</label>
+            </p>
+            <p>
+                <input type="button" value="Verificar" onclick="verificar()">
+            </p>
         </div>
 
-        <div>
-
+        <div id="res">
+            Preencha os dados certinho
         </div>
 
     </section>
 
     <footer>
-
+        &copy; FIXPAY
     </footer>
     <script src="script2.js"></script>
 </body>

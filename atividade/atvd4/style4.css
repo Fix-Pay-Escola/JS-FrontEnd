@@ -1,3 +1,4 @@
+
 body{
     background:#81A5B1;
     font: normal 15pt ;
@@ -22,8 +23,4 @@ body{
         color: white;
         text-align: center;
         font-style: italic;
-    }    
-    img{
-        height: 250px;
-        width: 250px;
-    }
+    } 
